@@ -13,7 +13,7 @@ function calculateAME(sub = true) {
     let interval = document.getElementById("interval").value;
     let fuel = document.getElementById("fuel").value;
     if (sub) {
-        fuel -= 2;
+        fuel -= inject;
         document.getElementById("fuel").value = fuel;
     }
     let result = ((fuel/inject)*interval)
